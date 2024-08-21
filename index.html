@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,7 @@
               colors: {
                 primary: 'rgb(255,255,255)',
                 secondary: 'rgb(30,30,30)',
+                arrow: 'rgb(171, 239, 95)',
                 clifford: '#da373d',
               },
               fontFamily: {
@@ -38,7 +39,62 @@
 </head>
 <body class="font-Manrope">
     <header>
-    
+      <!-- Navbar Section Start-->
+       <section>
+        <div class="navbar bg-base-100 w-11/12 mx-auto">
+          <div class="navbar-start flex gap-2">
+            <div class="bg-arrow flex rounded-full w-8 h-8 p-3 justify-center items-center">
+              <i class="fa-solid fa-arrow-right -rotate-45"></i>
+            </div>
+            <div class="text-left font-bold">
+              <a class="text-3xl">Rinterio</a>
+            </div>
+           
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-md text-gray-500">
+              <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a  href="#">Home</a></li>
+              <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Services</a></li>
+              <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Portfolio</a></li>
+              <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Blogs</a></li>
+              <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end ">
+          <div class="hidden lg:flex justify-center items-center gap-3">
+            <div class="bg-primary  border-[1px] flex rounded-full w-8 h-8 p-3 justify-center items-center">
+              <i class="fa-solid fa-magnifying-glass text-black-300 opacity-50 "></i>
+            </div>
+            <div class="bg-primary  border-[1px] flex rounded-full w-8 h-8 p-3 justify-center items-center">
+              <i class="fa-solid fa-cart-shopping text-black-300 opacity-50"></i>
+            </div>
+            <div class="flex bg-arrow rounded-3xl px-3 py-2 gap-3 justify-center items-center">
+              <div>
+                <h4 class="text-black text-lg font-bold">Book Consult</h4>
+              </div>
+              <div class="bg-black flex rounded-full w-8 h-8 p-3 justify-center items-center">
+                <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+              </div>
+            </div>
+          </div>
+            
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-lg font-medium gap-5">
+                <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a  href="#">Home</a></li>
+                <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Services</a></li>
+                <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Portfolio</a></li>
+                <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Blogs</a></li>
+                <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </section>
     </header>
     <main>
 
