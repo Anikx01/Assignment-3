@@ -24,6 +24,10 @@
                 primary: 'rgb(255,255,255)',
                 secondary: 'rgb(30,30,30)',
                 arrow: 'rgb(171, 239, 95)',
+                p_color: 'rgb(73, 73, 73)',
+                h1_color: 'rgb(33, 33, 33)',
+                v_color: 'rgba(171, 239, 95, 0.5)',
+                arrowbg_color:'rgb(171, 239, 95)',
                 clifford: '#da373d',
               },
               fontFamily: {
@@ -38,9 +42,9 @@
       </script>
 </head>
 <body class="font-Manrope">
-    <header>
+    <header class="">
       <!-- Navbar Section Start-->
-       <section>
+       <section class="">
         <div class="navbar bg-base-100 w-11/12 mx-auto">
           <div class="navbar-start flex gap-2">
             <div class="bg-arrow flex rounded-full w-8 h-8 p-3 justify-center items-center">
@@ -53,7 +57,7 @@
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-md text-gray-500">
-              <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a  href="#">Home</a></li>
+              <li class=" hover: text-gray-900 font-bold duration-300 ease-in-out"><a  href="#">Home</a></li>
               <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Services</a></li>
               <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Portfolio</a></li>
               <li class="hover:text-gray-900 font-bold duration-300 ease-in-out"><a href="#">Blogs</a></li>
@@ -95,6 +99,34 @@
           </div>
         </div>
        </section>
+       <!-- Navbar Ends -->
+
+       <!-- Banner Section Start -->
+        <section>
+          <div class="lg:w-11/12 mx-auto flex flex-col justify-center items-center gap-5 mb-5">
+            <div class="flex justify-center items-center">
+              <img class="w-8/12 lg:w-11/12" src="./assets/banner.png" alt="">
+            </div>
+            <div class="flex flex-col w-11/12 justify-center items-center gap-3">
+              <div class="w-11/12 lg:w-full">
+                <h1 class="font-extrabold text-center text-h1_color text-[28px] lg:text-6xl ">A barn house of this design has a striking appearance</h1>
+              </div>
+              <div class="w-full lg:w-9/12"> 
+                <p class="text-sm lg:text-[15px] text-p_color text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+              </div>
+              <div class="flex bg-v_color rounded-3xl w-full lg:w-2/12 px-3 py-2 gap-1 lg:gap-3 justify-center items-center">
+              <div>
+                <h4 class="text-black text-lg font-bold">View Details</h4>
+              </div>
+              <div class="bg-arrowbg_color flex rounded-full w-8 h-8 p-3 justify-center items-center">
+                <i class="fa-solid fa-arrow-right -rotate-45 text-black"></i>
+              </div>
+            </div>                
+            </div>
+          </div>
+        </section>
+        <!-- Banner Ends -->
     </header>
     <main>
 
