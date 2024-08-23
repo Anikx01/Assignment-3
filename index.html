@@ -28,6 +28,7 @@
                 h1_color: 'rgb(33, 33, 33)',
                 v_color: 'rgba(171, 239, 95, 0.5)',
                 arrowbg_color:'rgb(171, 239, 95)',
+                we_bg:'rgb(235,234,234)',
                 clifford: '#da373d',
               },
               fontFamily: {
@@ -45,9 +46,9 @@
     <header class="">
       <!-- Navbar Section Start-->
        <section class="">
-        <div class="navbar bg-base-100 w-11/12 mx-auto">
+        <div class="navbar bg-base-100 w-10/12 mx-auto">
           <div class="navbar-start flex gap-2">
-            <div class="bg-arrow flex rounded-full w-8 h-8 p-3 justify-center items-center">
+            <div class="bg-arrow flex rounded-full w-8 h-8 p-3 xl:w-10 xl:h-10 justify-center items-center">
               <i class="fa-solid fa-arrow-right -rotate-45"></i>
             </div>
             <div class="text-left font-bold">
@@ -103,19 +104,19 @@
 
        <!-- Banner Section Start -->
         <section>
-          <div class="lg:w-11/12 mx-auto flex flex-col justify-center items-center gap-5 mb-5">
+          <div class="lg:w-10/12 mx-auto flex flex-col justify-center items-center gap-5 mb-5">
             <div class="flex justify-center items-center">
               <img class="w-8/12 lg:w-11/12" src="./assets/banner.png" alt="">
             </div>
             <div class="flex flex-col w-11/12 justify-center items-center gap-3">
-              <div class="w-11/12 lg:w-full">
-                <h1 class="font-extrabold text-center text-h1_color text-[28px] lg:text-6xl ">A barn house of this design has a striking appearance</h1>
+              <div class="w-11/12 lg:w-full xl:w-full">
+                <h1 class="font-extrabold text-center text-h1_color text-[28px] lg:text-6xl">A barn house of this design has a striking appearance</h1>
               </div>
-              <div class="w-full lg:w-9/12"> 
-                <p class="text-sm lg:text-[15px] text-p_color text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              <div class="w-11/12 lg:w-10/12"> 
+                <p class="text-[12px] lg:text-[15px] text-p_color text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
               </div>
-              <div class="flex bg-v_color rounded-3xl w-full lg:w-2/12 px-3 py-2 gap-1 lg:gap-3 justify-center items-center">
+              <div class="flex bg-v_color rounded-3xl w-full lg:w-3/12 px-2 py-2 gap-1 lg:gap-3 justify-center items-center">
               <div>
                 <h4 class="text-black text-lg font-bold">View Details</h4>
               </div>
@@ -129,8 +130,63 @@
         <!-- Banner Ends -->
     </header>
     <main>
-
-    </main>
+      <!-- We Design Section Starts -->
+       <section class="bg-we_bg h-[100rem]">
+        <div class="w-10/12 mx-auto">
+          <div class="hero bg-we_bg">
+            <div class=" hero-content  flex-col-reverse p-1 lg:flex-row-reverse justify-between mt-16">
+              <div class="lg:w-1/2 flex justify-center p-2 items-center">
+                <img class="lg:w-11/12" src="./assets/Rectangle.png" alt="">
+              </div>
+              
+              <div class="lg:w-1/2 h-full">
+                <div class=" relative lg:w-9/12 flex flex-col gap-5">
+                  <div class="hidden absolute lg:inline-block -left-14  -top-14">
+                    <img class=" w-full" src="./assets/Vector.png" alt="">
+                  </div>
+                  <div class="w-full flex justify-center items-center lg:justify-start">
+                    <button class="btn bg-primary text-p_color font-bold px-6 py-0">
+                      <i class="fa-solid fa-arrow-right text-p_color"></i>
+                      About US
+                    </button>
+                  </div>
+                   <div class="flex flex-col gap-4">
+                    <div>
+                      <h3 class="font-extrabold text-center lg:text-left text-h1_color text-[28px] lg:text-4xl">We design thoughtful, liveable spaces</h3>
+                    </div>
+                    <div class="">
+                      <p class="text-sm text-center lg:text-left font-semibold lg:text-[14px] text-p_color">The barn house captivates with its blend of rustic charm and 
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                   </div>
+                   <div class="relative bg-white flex gap-3 p-5 mb-0 rounded-lg">
+                    <div>
+                      <img src="./assets/commercial.png" alt="">
+                    </div> 
+                    <div class="lg:w-8/12">
+                      <h4 class="text-lg font-bold text-p_color">Commercial</h4>
+                      <p class="text-sm lg:text-[13px] text-p_color">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                   </div>
+                   <div class="relative bg-white flex gap-3 p-5 rounded-lg">
+                    <div class="">
+                      <img src="./assets/residential.png" alt="">
+                    </div>
+                    <div class="lg:w-8/12">
+                      <h4 class="text-lg font-bold text-p_color">Residential</h4>
+                      <p class="text-sm lg:text-[13px] text-p_color">The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                   </div>
+                </div>
+            
+              </div>
+            </div>
+          </div> 
+        </div>   
+     
+       </section>
+       <!-- We Design Section Ends -->
+ </main>
     <footer>
 
     </footer>
