@@ -34,6 +34,9 @@
                 second_yellow:'rgb(239, 218, 110)',
                 third_paste:'rgb(164, 218, 195)',
                 fourth_blue:'rgb(119, 170, 234)',
+                footer_r:'rgb(28, 28, 28)',
+                footer_p:'rgb(115, 115, 115)',
+                footer_a:'rgb(233, 233,233)',
                 explore_color:'rgba(171, 239, 95, 0.2)',
                 clifford: '#da373d',
               },
@@ -59,8 +62,7 @@
             </div>
             <div class="text-left font-bold">
               <a class="text-3xl">Rinterio</a>
-            </div>
-           
+            </div>          
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-md text-gray-500">
@@ -428,8 +430,8 @@
          <!-- Lets Discuss Next Project Section Ends -->
 
          <!-- Unique Section Starts -->
-          <section class=" h-[100rem] mt-20">
-              <div class="lg:w-10/12 mx-auto border-2 border-red-600">
+          <section class="mt-20 mb-10">
+              <div class="lg:w-10/12 mx-auto">
                 <div>
                   <div class="">
                     <div class="w-10/12 lg:w-6/12 mx-auto flex flex-col gap-5 mb-5">
@@ -441,7 +443,7 @@
                       <div class="w-full">
                         <h2 class="text-3xl lg:text-4xl font-extrabold text-black text-center">Explore Common Queries</h2>
                       </div>
-                      <div class="w-full  border-2">
+                      <div class="w-full">
                         <p class="text-sm lg:text-[13px] font-medium text-black text-center">
                           Find clear answers to frequently asked questions and get the information you need quickly. Dive into our most common topics for quick solutions.
                         </p>
@@ -452,7 +454,7 @@
 
               </div>
 
-              <div class="w-10/12 lg:w-10/12 flex flex-col lg:flex-row gap-5 mx-auto border-2 border-emerald-400 mt-10">
+              <div class="w-10/12 lg:w-10/12 flex flex-col lg:flex-row gap-5 mx-auto mt-10">
                 <div class="w-full lg:w-1/3">
                   <img class="w-full" src="./assets/faq.jpg" alt="">
                 </div>
@@ -501,8 +503,46 @@
           </section>
          <!-- Unique Section Ends -->
  </main>
-    <footer>
+    
+      <footer class="footer footer-center bg-base-200 text-base-content rounded p-10 bg-footer_r text-white">   
+        <nav>
+          <div class="grid grid-flow-col gap-3">
+        
+            <div class="bg-arrow text-black flex rounded-full w-10 h-10 lg:w-10 lg:h-10 p-3  justify-center items-center">
+              <i class="fa-solid fa-arrow-right -rotate-45"></i>
+            </div>
+            <div class="text-left font-bold flex justify-center items-center">
+              <a class="text-3xl lg:text-2xl">Rinterio</a>
+            </div>
+          </div>
+        </nav>
 
-    </footer>
+        <nav class="-mt-5 lg:-mt-5">
+          <div class="w-full lg:w-8/12 border-2 border-footer_r">
+            <p class="text-footer_p text-sm lg:text-[13px] font-medium text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+        </nav>
+
+        <nav class="grid grid-cols-1 lg:grid-cols-5 gap-4 lg:w-7/12">
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Services</a>
+          <a class="link link-hover">Portfolio</a>
+          <a class="link link-hover">Blogs</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+
+        <aside class="lg:w-auto w-full">
+          <button class="w-full flex bg-arrow rounded-3xl px-3 py-2 gap-3 justify-center items-center">
+            <div>
+              <h4 class="text-black text-lg font-bold">Book Consult</h4>
+            </div>
+            <div class="bg-black flex rounded-full w-8 h-8 p-3 justify-center items-center">
+              <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+            </div>
+          </button>
+          <!-- <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p> -->
+        </aside>
+      </footer>
+   
 </body>
 </html>
